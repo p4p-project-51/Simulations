@@ -1,0 +1,45 @@
+## Ignore Mac and Windows files
+.DS_Store
+desktop.ini
+Icon*
+*.pem
+
+## Ignore Altium files
+*.LOG
+__Previews/
+History/
+*.PrjPCBStructure
+*.SchDocPreview
+*.PcbDocPreview
+Project\ Logs
+
+## Ignore LTSpice created files
+*.net
+*.op
+*.raw
+*.lnk
+*.log
+*.ipynd_checkpoints
+*checkpoint.ipynb
+*.csv
+
+## Ignore Proteus files
+*.pdsbak
+*.pdsprj.*
+Project\ Backups
+
+## Ignore MATLAB autosave files
+*.asv
+
+# Ignore Node.js application dependencies
+node_modules
+
+# Ignore Node.js dependencies install debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignore local env files
+.env*.local
+.env
