@@ -1,0 +1,157 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002025, month=000000000008, day=000000000013, hour=000000000016, min=000000000021, sec=000000000030)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000004028, lin=000000000024, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock36'
+	SimSetupID=24
+	SimSetupName='Solver'
+	VersionID=447
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		Vmap(341, 342, 386, 389, 447, 455)
+		IDDblMap(420, -1)
+		$begin 'DataMap'
+			VID=417
+			Ver=447
+			M(DblID=420, Dir='DV417_S24_V455.cmesh420/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'LastPassNumbers'
+		LP(VID=417, Ver=447, P=4)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		Vmap(341, 370, 386, 394, 447, 460)
+		P(VID=417, Ver=447, File='DV417_S24_V460.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			Vmap(386, 421, 447, 467)
+			MI(VID=417, Ver=447, Dir='DV417_S24_MI0_V467.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock36'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=24, Instance=\'\', Solution=-3, VersionID=447)'='SolutionBlock37'
+	'SolutionKey(SimSetup=24, Instance=\'SetupDefinition\', Solution=-1, VersionID=447)'='SolutionBlock36'
+	'SolutionKey(SimSetup=24, Instance=\'SolutionDefinition\', Solution=25, VersionID=482)'='SolutionBlock38'
+	'SolutionKey(SimSetup=24, Instance=\'SolutionDefinition\', Solution=26, VersionID=482)'='SolutionBlock39'
+$end 'BlockMapName'
+$begin 'SolutionBlock38'
+	SolutionName='AdaptivePass'
+	SolutionID=25
+	V=482
+	$begin 'States'
+		F(VID=417, Ver=482)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'PD'
+		NextUniqueID=73
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=61
+			Vmap(0, 1, 25, 26, 37, 38, 49, 50, 61, 62)
+			PD(VID=417, Ver=61, File='DV417_SOL25_PD0_V62.sd')
+		$end 'SubData'
+	$end 'PD'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			Vmap(341, 358, 386, 407, 425, 438, 447, 474, 482, 494)
+			NFSP(VID=417, Ver=482, File='DV417_SOL25_NFSP10_V494.sd')
+		$end 'SubData'
+	$end 'NFSP'
+$end 'SolutionBlock38'
+$begin 'SolutionBlock39'
+	SolutionName='LastAdaptive'
+	SolutionID=26
+	V=482
+	$begin 'States'
+		F(VID=417, Ver=482)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		Vmap(341, 360, 386, 409, 425, 427, 447, 449, 482, 484)
+		IDDblMap(422, -1)
+		$begin 'DataMap'
+			VID=417
+			Ver=482
+			Field(DblID=422, Dir='DV417_SOL26_V484.Field422/')
+		$end 'DataMap'
+	$end 'Fields'
+	$begin 'PD'
+		NextUniqueID=73
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=61
+			Vmap(0, 1, 25, 26, 37, 38, 49, 50, 61, 62)
+			PD(VID=417, Ver=61, File='DV417_SOL26_PD0_V62.sd')
+		$end 'SubData'
+	$end 'PD'
+$end 'SolutionBlock39'
+$begin 'SolutionBlock37'
+	ConvSetupName='ms'
+	MaxPasses='10'
+	MinPasses='2'
+	ConvTarget='(5, 5)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(te=0.7410581557152215, tet=28229, ee=73.86107011583454, p=1, de_ee='(73.861, N/A)')
+	c(de=5.521530183380303, te=0.7001404059710041, tet=36662, ee=5.389664948901015, p=2, de_ee='(5.3897, 5.5215)')
+	c(de=140.8404457021262, te=1.678228013368351, tet=47671, ee=1.252886914615186, p=3, de_ee='(1.2529, 140.84)')
+	c(de=0.008141595714861082, te=1.678364647908373, tet=61977, ee=0.6069156164860728, p=4, de_ee='(0.60692, 0.0081416)')
+$end 'SolutionBlock37'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell3DDesign1'
+	VersionID=447
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=501
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=417)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=417, Ver=447, Dir='DV417_V447.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=417, Ver=447, Dir='DV417_MI0_V447.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=3523, lin=1, lvl=0)
+		SolutionBlock36(pos=370, lin=11, lvl=0)
+		SolutionBlock38(pos=1522, lin=47, lvl=0)
+		SolutionBlock39(pos=2203, lin=78, lvl=0)
+		SolutionBlock37(pos=2913, lin=111, lvl=0)
+		BlockMapName(pos=1044, lin=40, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=4028, lin=24, lvl=0)
+	$end '$index$'
+$end '$index$'
